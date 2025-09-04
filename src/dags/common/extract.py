@@ -12,9 +12,14 @@ import io
 
 
 SCOPES = ['https://www.googleapis.com/auth/drive']
-SERVICE_ACCOUNT_FILE = "massive-glyph-323908-5809907c52ef.json"
+SERVICE_ACCOUNT_FILE = "/home/willane-jaures/Documents/DataAfriqueHub/dataafriquehub-66b2a67a8cb9.json"
 DATA_DIR = "data"
 RAW_DATA_DIR = os.path.join(DATA_DIR, "raw_data")
+
+
+
+
+
 
 def connect_to_drive():
     if not os.path.exists(SERVICE_ACCOUNT_FILE):
@@ -108,5 +113,6 @@ def extract_orders(date: datetime, db_path: str = "ecommerce_orders_may2024.db",
 
 
 if __name__=="__main__":
-    extract_products(datetime.strptime("2024-05-10", "%Y-%m-%d"))
-    #extract_orders(datetime.strptime("2024-05-03", "%Y-%m-%d"))
+    #extract_clients(datetime.strptime("2024-05-10", "%Y-%m-%d"))
+    #extract_products(datetime.strptime("2024-05-10", "%Y-%m-%d"))
+    extract_orders(datetime.strptime("2024-05-03", "%Y-%m-%d"))

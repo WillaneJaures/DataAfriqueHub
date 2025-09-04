@@ -5,3 +5,13 @@ airflow.db
 data/
 simple_auth_manager_passwords.json.generated
 logs/
+.env/
+dataafriquehub-66b2a67a8cb9.json
+draw1.drawio
+ecommerce_orders_may2024.db
+try1.sql
+online_retail.csv
+products.csv
+elt.py
+clients-20250830T091941Z-1-001/
+
